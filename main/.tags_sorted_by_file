@@ -1,0 +1,129 @@
+fonts	fonts.c	/^const font_info_t * fonts[NUM_FONTS] =$/;"	v
+FONTS_H	fonts.h	25;"	d
+NUM_FONTS	fonts.h	48;"	d
+_font_char_desc	fonts.h	/^typedef struct _font_char_desc$/;"	s
+_font_info	fonts.h	/^typedef struct _font_info$/;"	s
+bitmap	fonts.h	/^    const uint8_t *bitmap;  \/\/!< Character bitmap$/;"	m	struct:_font_info
+c	fonts.h	/^    uint8_t c;              \/\/!< Simulation of "C" width in TrueType term, the space between adjacent characters$/;"	m	struct:_font_info
+char_descriptors	fonts.h	/^    const font_char_desc_t* char_descriptors; \/\/! descriptor for each character$/;"	m	struct:_font_info
+char_end	fonts.h	/^    char char_end;          \/\/!< Last character$/;"	m	struct:_font_info
+char_start	fonts.h	/^    char char_start;        \/\/!< First character$/;"	m	struct:_font_info
+font_char_desc_t	fonts.h	/^} font_char_desc_t;$/;"	t	typeref:struct:_font_char_desc
+font_info_t	fonts.h	/^} font_info_t;$/;"	t	typeref:struct:_font_info
+height	fonts.h	/^    uint8_t height;         \/\/!< Character height in pixel, all characters have same height$/;"	m	struct:_font_info
+offset	fonts.h	/^    uint16_t offset;    \/\/!< Offset of this character in bitmap$/;"	m	struct:_font_char_desc
+width	fonts.h	/^    uint8_t width;      \/\/!< Character width in pixel$/;"	m	struct:_font_char_desc
+CONNECTED_BIT	hello_world_main.c	/^const int CONNECTED_BIT = BIT0;$/;"	v
+MAX_HTTP_RECV_BUFFER	hello_world_main.c	55;"	d	file:
+PASSS	hello_world_main.c	/^static const char PASSS[][64] = {"chnet123", "86053436"};$/;"	v	file:
+SCANDONE_BIT	hello_world_main.c	/^const int SCANDONE_BIT = BIT1;$/;"	v
+STAS	hello_world_main.c	/^static const char STAS[][32] = {"iCoolDog", "CoolDog"};$/;"	v	file:
+TAG	hello_world_main.c	/^static const char *TAG = "OLED-WiFi-RTC";$/;"	v	file:
+_http_event_handler	hello_world_main.c	/^esp_err_t _http_event_handler(esp_http_client_event_t *evt)$/;"	f
+app_main	hello_world_main.c	/^void app_main() {$/;"	f
+clearmsg	hello_world_main.c	/^void clearmsg(char msg[]){$/;"	f
+event_handler	hello_world_main.c	/^static esp_err_t event_handler(void *ctx, system_event_t *event) {$/;"	f	file:
+event_handler_scan	hello_world_main.c	/^esp_err_t event_handler_scan(void *ctx, system_event_t *event) {$/;"	f
+initialise_wifi	hello_world_main.c	/^static void initialise_wifi(void) {$/;"	f	file:
+initialize_sntp	hello_world_main.c	/^static void initialize_sntp(void) {$/;"	f	file:
+jiong1	hello_world_main.c	/^uint8_t jiong1[] = {\/*--  ����:  ��  --*\/$/;"	v
+lcdwrite	hello_world_main.c	/^void lcdwrite() {$/;"	f
+lcdwrite2	hello_world_main.c	/^void lcdwrite2() {$/;"	f
+lei1	hello_world_main.c	/^uint8_t lei1[] = {\/*--  ����:  ��  --*\/$/;"	v
+newsget	hello_world_main.c	/^static char* newsget()$/;"	f	file:
+ntpc	hello_world_main.c	/^void ntpc() {$/;"	f
+obtain_time	hello_world_main.c	/^static void obtain_time(void) {$/;"	f	file:
+spifont	hello_world_main.c	/^spi_device_handle_t spifont;$/;"	v
+staidx	hello_world_main.c	/^int staidx = 0;$/;"	v
+wifi_event_group	hello_world_main.c	/^static EventGroupHandle_t wifi_event_group;$/;"	v	file:
+_IMGBMP_H_	imgbmp.h	2;"	d
+bmp	imgbmp.h	/^const uint8_t bmp[]={$/;"	v
+TAG	ssd1306enc.c	/^static const char *TAG = "SSD1306ENC";$/;"	v	file:
+address	ssd1306enc.c	/^uint8_t address;            \/\/ I2C address$/;"	v
+buffer	ssd1306enc.c	/^uint8_t *buffer;            \/\/ display buffer$/;"	v
+cleargbuf	ssd1306enc.c	/^void cleargbuf() {$/;"	f
+drawBitmap_togram	ssd1306enc.c	/^void drawBitmap_togram(uint8_t x, uint8_t y, uint8_t w, uint8_t h,$/;"	f
+draw_char	ssd1306enc.c	/^uint8_t draw_char(uint8_t x, uint8_t y, unsigned char c) {$/;"	f
+draw_gb_string	ssd1306enc.c	/^void draw_gb_string(uint8_t x,uint8_t y,char *text)$/;"	f
+draw_string	ssd1306enc.c	/^uint8_t draw_string(uint8_t x, uint8_t y, char *str) {$/;"	f
+font	ssd1306enc.c	/^const font_info_t *font;$/;"	v
+fontaddr	ssd1306enc.c	/^uint32_t fontaddr = 0;$/;"	v
+fontbuf	ssd1306enc.c	/^uint8_t fontbuf[32];$/;"	v
+gbuf	ssd1306enc.c	/^static uint8_t gbuf[1024];$/;"	v	file:
+getStingAddr	ssd1306enc.c	/^fontaddr_t getStingAddr(char *text)  \/\/ only support 2byte$/;"	f
+height	ssd1306enc.c	/^uint8_t height;             \/\/ panel height (32 or 64)$/;"	v
+refresh_bottom	ssd1306enc.c	/^uint8_t refresh_bottom = 0;$/;"	v
+refresh_left	ssd1306enc.c	/^uint8_t refresh_left = 255;$/;"	v
+refresh_right	ssd1306enc.c	/^uint8_t refresh_right = 0;$/;"	v
+refresh_top	ssd1306enc.c	/^uint8_t refresh_top = 255;  \/\/ "Dirty" window$/;"	v
+refreshex	ssd1306enc.c	/^void refreshex(uint8_t force) {$/;"	f
+select_font	ssd1306enc.c	/^void select_font(uint8_t idx) {$/;"	f
+spi_cmd	ssd1306enc.c	/^void spi_cmd(spi_device_handle_t spi, const uint8_t cmd) {$/;"	f
+spi_data	ssd1306enc.c	/^void spi_data(spi_device_handle_t spi, const uint8_t *data, int len) {$/;"	f
+spi_get_data	ssd1306enc.c	/^uint8_t *spi_get_data(spi_device_handle_t spi, fontaddr_t addr) {$/;"	f
+spi_get_data_tobuf	ssd1306enc.c	/^void spi_get_data_tobuf(spi_device_handle_t spi, fontaddr_t addr,$/;"	f
+spi_get_data_tobuf_34	ssd1306enc.c	/^void spi_get_data_tobuf_34(spi_device_handle_t spi, fontaddr_t addr,$/;"	f
+type	ssd1306enc.c	/^ssd1306_panel_type_t type;$/;"	v
+vbuf	ssd1306enc.c	/^static uint8_t vbuf[1024];$/;"	v	file:
+width	ssd1306enc.c	/^uint8_t width;              \/\/ panel width (128)$/;"	v
+BLACK	ssd1306enc.h	/^	BLACK = 0,        \/\/!< Black (pixel off)$/;"	e	enum:__anon1
+FONTADDR	ssd1306enc.h	/^typedef struct FONTADDR$/;"	s
+FONTINFO	ssd1306enc.h	/^typedef struct FONTINFO$/;"	s
+FONTNAME	ssd1306enc.h	/^typedef enum FONTNAME$/;"	g
+FT_ASCII_16x16_TIMES	ssd1306enc.h	/^	FT_ASCII_16x16_TIMES$/;"	e	enum:FONTNAME
+FT_ASCII_5x7	ssd1306enc.h	/^	FT_ASCII_5x7,$/;"	e	enum:FONTNAME
+FT_ASCII_7x8	ssd1306enc.h	/^	FT_ASCII_7x8,$/;"	e	enum:FONTNAME
+FT_ASCII_8x16	ssd1306enc.h	/^	FT_ASCII_8x16,$/;"	e	enum:FONTNAME
+FT_ASCII_8x16_ARIAL	ssd1306enc.h	/^	FT_ASCII_8x16_ARIAL,$/;"	e	enum:FONTNAME
+FT_ASCII_8x16_BOLD	ssd1306enc.h	/^	FT_ASCII_8x16_BOLD,$/;"	e	enum:FONTNAME
+FT_HZ	ssd1306enc.h	/^	FT_HZ = 0,$/;"	e	enum:FONTNAME
+FT_HZ_EXT	ssd1306enc.h	/^	FT_HZ_EXT,$/;"	e	enum:FONTNAME
+INVERT	ssd1306enc.h	/^	INVERT = 2,       \/\/!< Invert pixel (XOR)$/;"	e	enum:__anon1
+NUM_FONTS_ZK	ssd1306enc.h	63;"	d
+PIN_FONT_CS	ssd1306enc.h	61;"	d
+PIN_OLED_CS	ssd1306enc.h	62;"	d
+SSD1306_128x32	ssd1306enc.h	/^	SSD1306_128x32 = 2	\/\/!< 128x64 panel$/;"	e	enum:__anon2
+SSD1306_128x64	ssd1306enc.h	/^	SSD1306_128x64 = 1,	\/\/!< 128x32 panel$/;"	e	enum:__anon2
+TRANSPARENT	ssd1306enc.h	/^	TRANSPARENT = -1, \/\/!< Transparent (not drawing)$/;"	e	enum:__anon1
+WHITE	ssd1306enc.h	/^	WHITE = 1,        \/\/!< White (or blue, yellow, pixel on)$/;"	e	enum:__anon1
+_SSD1306ENC_H__H_	ssd1306enc.h	6;"	d
+fontaddr_t	ssd1306enc.h	/^} fontaddr_t;$/;"	t	typeref:struct:FONTADDR
+fontinfo_t	ssd1306enc.h	/^} fontinfo_t;$/;"	t	typeref:struct:FONTINFO
+fontname_t	ssd1306enc.h	/^} fontname_t;$/;"	t	typeref:enum:FONTNAME
+high	ssd1306enc.h	/^    uint8_t high;$/;"	m	struct:FONTADDR
+low	ssd1306enc.h	/^    uint8_t low;$/;"	m	struct:FONTADDR
+mid	ssd1306enc.h	/^    uint8_t mid;$/;"	m	struct:FONTADDR
+name	ssd1306enc.h	/^	fontname_t name;$/;"	m	struct:FONTINFO
+offset	ssd1306enc.h	/^	uint32_t offset;$/;"	m	struct:FONTINFO
+ssd1306_color_t	ssd1306enc.h	/^} ssd1306_color_t;$/;"	t	typeref:enum:__anon1
+ssd1306_panel_type_t	ssd1306enc.h	/^} ssd1306_panel_type_t;$/;"	t	typeref:enum:__anon2
+width	ssd1306enc.h	/^	uint8_t width;$/;"	m	struct:FONTINFO
+FLUSH_TIME	timer_fi.c	33;"	d	file:
+TEST_WITHOUT_RELOAD	timer_fi.c	31;"	d	file:
+TEST_WITH_RELOAD	timer_fi.c	32;"	d	file:
+TIMER_DIVIDER	timer_fi.c	27;"	d	file:
+TIMER_INTERVAL0_SEC	timer_fi.c	29;"	d	file:
+TIMER_INTERVAL1_SEC	timer_fi.c	30;"	d	file:
+TIMER_SCALE	timer_fi.c	28;"	d	file:
+example_tg0_timer_init	timer_fi.c	/^static void example_tg0_timer_init(int timer_idx, $/;"	f	file:
+flushtimer	timer_fi.c	/^void flushtimer() {$/;"	f
+print_timer_counter	timer_fi.c	/^static void inline print_timer_counter(uint64_t counter_value)$/;"	f	file:
+test_timer	timer_fi.c	/^void test_timer()$/;"	f
+timer_counter_value	timer_fi.c	/^    uint64_t timer_counter_value;$/;"	m	struct:__anon3	file:
+timer_event_t	timer_fi.c	/^} timer_event_t;$/;"	t	typeref:struct:__anon3	file:
+timer_example_evt_task	timer_fi.c	/^static void timer_example_evt_task(void *arg)$/;"	f	file:
+timer_group	timer_fi.c	/^    int timer_group;$/;"	m	struct:__anon3	file:
+timer_group0_isr	timer_fi.c	/^void IRAM_ATTR timer_group0_isr(void *para)$/;"	f
+timer_idx	timer_fi.c	/^    int timer_idx;$/;"	m	struct:__anon3	file:
+timer_queue	timer_fi.c	/^xQueueHandle timer_queue;$/;"	v
+type	timer_fi.c	/^    int type;  \/\/ the type of timer's event$/;"	m	struct:__anon3	file:
+_TIMER_FI__H_	timer_fi.h	2;"	d
+tahoma_8ptBitmaps	tohoma.c	/^const uint8_t tahoma_8ptBitmaps[] = $/;"	v
+tahoma_8ptDescriptors	tohoma.c	/^const font_char_desc_t tahoma_8ptDescriptors[] = $/;"	v
+tahoma_8ptFontInfo	tohoma.c	/^const font_info_t tahoma_8ptFontInfo =$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
