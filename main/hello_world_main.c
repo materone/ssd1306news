@@ -48,17 +48,15 @@
 #include "timer_fi.h"
 
 #include "cJSON.h"
+#include "esp_http_client.h"
+#define MAX_HTTP_RECV_BUFFER 512
 
 //include pass and dnsgw
 #include "p.h"
 //p.h like 
 // static const char STAS[][32] = {"AA", "BB"};
 // static const char PASSS[][64] = {"11", "22"};
-// static uint32_t DNSGW[] = {ESP_IP4TOADDR( 192,168,100,3),ESP_IP4TOADDR( 192,168,100,4)}
-
-#include "esp_http_client.h"
-#define MAX_HTTP_RECV_BUFFER 512
-
+// static uint32_t DNSGW[] = {ESP_IP4TOADDR( 192,168,100,3),ESP_IP4TOADDR( 192,168,100,4)};
 
 /* The event group allows multiple bits for each event,
    but we only care about one event - are we connected
