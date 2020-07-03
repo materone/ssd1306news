@@ -44,3 +44,10 @@ cond(no)->op
     c2(yes)->io->e
     c2(no)->op2->e
 ```
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
