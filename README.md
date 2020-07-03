@@ -1,3 +1,11 @@
+---
+layout: post
+title: Github 博客画流程图
+category: how2blog
+tags: [tools, study, markdown]
+mermaid: true
+---
+
 # Hello World Example
 
 Starts a FreeRTOS task to print "Hello World"
@@ -43,4 +51,7 @@ Next
     cond(no)->sub1(left)->op1
     c2(yes)->io->e
     c2(no)->op2->e
-    ```
+```
+```mermaid
+画图语句...
+```
