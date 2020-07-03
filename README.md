@@ -14,7 +14,10 @@ git checkout esp32-v1
 ```
 3. change the code ssd1306news to v4 ,adptor the esp-idf v4+
 ```
+git clone https://github.com/materone/ssd1306news.git
 git checkout v4
+mkdir ssd1306news/components
+cp -a ssd1306 ssd1306news/components
 ```
 
 ```flow
