@@ -6,3 +6,5 @@ See the README.md file in the upper level 'examples' directory for more informat
 
 first ,you will get ssd1306 port library from tony into esp-idf componets lib
 git clone https://github.com/materone/ssd1306.git
+then checkout the esp32 build version
+git checkout esp32-v1
