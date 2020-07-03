@@ -1,26 +1,18 @@
----
-layout: post
-title: Github 博客画流程图
-category: how2blog
-tags: [tools, study, markdown]
-mermaid: true
----
-
 # Hello World Example
 
 Starts a FreeRTOS task to print "Hello World"
 
 See the README.md file in the upper level 'examples' directory for more information about examples.
 
-1. First ,you will get ssd1306 port library from tony into esp-idf componets lib
+#1. First ,you will get ssd1306 port library from tony into esp-idf componets lib
 ```
 git clone https://github.com/materone/ssd1306.git
 ```
-2. Then checkout the esp32 build version
+#2. Then checkout the esp32 build version
 ```
 git checkout esp32-v1
 ```
-3. change the code ssd1306news to v4 ,adptor the esp-idf v4+
+#3. change the code ssd1306news to v4 ,adptor the esp-idf v4+
 ```
 git clone https://github.com/materone/ssd1306news.git
 git checkout v4
@@ -36,7 +28,7 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
-Next
+#Next
    ```flow
     st=>start: Start|past:>http://www.baidu.com
     e=>end:  Ende|future:>http://www.baidu.com
@@ -51,7 +43,4 @@ Next
     cond(no)->sub1(left)->op1
     c2(yes)->io->e
     c2(no)->op2->e
-```
-```mermaid
-画图语句...
 ```
