@@ -19,6 +19,9 @@ git checkout v4
 mkdir ssd1306news/components
 cp -a ssd1306 ssd1306news/components
 ```
+#extra
+if you run on centos , must install libusb
+sudo yum install libusb
 ```flow
 st=>start: 开始
 op=>operation: My Operation
